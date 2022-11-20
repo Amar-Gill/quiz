@@ -52,7 +52,7 @@ func main() {
 
 		select {
 		case <-timer.C:
-			fmt.Println("You're too late! Mwahahahahahhaha.")
+			fmt.Println("\nYou're too late! Mwahahahahahhaha.")
 			fmt.Printf("Correct answers: %d / %d\n", numCorrect, len(lines))
 			return
 		case answer := <-answerCh:
